@@ -1,9 +1,10 @@
+import Link from 'next/link';
 
 export default function Tutorial() {
     return (
         <div className="flex-col pt-8 w-90 tx-white pb-100 ">
             
-    <a href="/" className="flex-col nodeco tx-white  py-4 bord-r-50 w-90 w-max-700px"
+    <Link href="/" className="flex-col nodeco tx-white  py-4 bord-r-50 w-90 w-max-700px"
     style={{background: "linear-gradient(0deg, #00000000, #00000077)"}}
     >
         <h1 className="tx-mdl  tx-ls-3 mb-1" >Solana Token22 Guide</h1>
@@ -24,7 +25,7 @@ export default function Tutorial() {
         </div>
         <img  style={{boxShadow: "0 0 30px #aaddff44"}} 
         src="/page/solana.png" alt="Solana Token22 Helper" className="w-100px bord-r-100p spin-60" />
-    </a>
+    </Link>
 
 
 
@@ -45,24 +46,24 @@ export default function Tutorial() {
         <ul className="flex-wrap flex-align-start gap-8 w-80 ">
             <li>
                 <ul className="ma-0 pa-0">
-                  <li><a className=" py-2 tx-ls-1 opaci-chov--50 nodeco block" href="https://github.com/webduno/solana22" 
-                  target="_blank">🗂️ github.com/webduno/Solana22</a></li>
+                  <li><Link className=" py-2 tx-ls-1 opaci-chov--50 nodeco block" href="https://github.com/webduno/solana22" 
+                  target="_blank">🗂️ github.com/webduno/Solana22</Link></li>
                   <hr className="opaci-20" />
-                  <li><a className=" py-2 opaci-chov--50 nodeco block" href="https://phantom.com/" 
-                  target="_blank">👾 phantom.com (wallet)</a></li>
-                  <li><a className=" py-2 opaci-chov--50 nodeco block" href="https://nodejs.org/" 
-                  target="_blank">📗 nodejs.org</a></li>
-                  <li><a className=" py-2 opaci-chov--50 nodeco block" href="https://docs.solanalabs.com/cli/install" 
-                  target="_blank">🔍 docs.solanalabs.com/cli/install</a></li>
+                  <li><Link className=" py-2 opaci-chov--50 nodeco block" href="https://phantom.com/" 
+                  target="_blank">👾 phantom.com (wallet)</Link></li>
+                  <li><Link className=" py-2 opaci-chov--50 nodeco block" href="https://nodejs.org/" 
+                  target="_blank">📗 nodejs.org</Link></li>
+                  <li><Link className=" py-2 opaci-chov--50 nodeco block" href="https://docs.solanalabs.com/cli/install" 
+                  target="_blank">🔍 docs.solanalabs.com/cli/install</Link></li>
 
                   <hr className="opaci-20" />
-                  <li><a className=" py-2 opaci-chov--50 nodeco tx-gray block" href="https://fluxbeam.xyz/app/liquidity" 
-                  target="_blank">💧 fluxbeam.xyz</a></li>
+                  <li><Link className=" py-2 opaci-chov--50 nodeco tx-gray block" href="https://fluxbeam.xyz/app/liquidity" 
+                  target="_blank">💧 fluxbeam.xyz</Link></li>
                   <hr className="opaci-20" />
-                  <li><a className=" py-2 opaci-chov--50 nodeco tx-gray block" href="https://docs.anza.xyz/cli/install/" 
-                  target="_blank">📟 docs.anza.xyz (cli)</a></li>
-                  <li><a className=" py-2 opaci-chov--50 nodeco tx-gray block" href="https://spl.solana.com/token-2022" 
-                  target="_blank">💻 spl.solana.com/token-2022</a></li>
+                  <li><Link className=" py-2 opaci-chov--50 nodeco tx-gray block" href="https://docs.anza.xyz/cli/install/" 
+                  target="_blank">📟 docs.anza.xyz (cli)</Link></li>
+                  <li><Link className=" py-2 opaci-chov--50 nodeco tx-gray block" href="https://spl.solana.com/token-2022" 
+                  target="_blank">💻 spl.solana.com/token-2022</Link></li>
                 </ul>
             </li>
         </ul>
@@ -217,17 +218,17 @@ export default function Tutorial() {
     <div className="bord-r-25 flex-col py-100 bg-w-10 w-90 mt-8     bg-glass-10" id="ddddd"
     // style={{marginLeft: "5%"}}
     >
-        <a href="/image.png" target="_blank" className="flex-col nodeco tx-white">
+        <Link href="/image.png" target="_blank" className="flex-col nodeco tx-white">
         <div className="tx-mdl opaci-75 tx-ls-3 mb-1" >Example Image</div>
         <div className="tx-sm underline opaci-50 tx-ls-1  mb-4" >solana22.vercel.app/image.png</div>
             <img src="/image.png" alt="Solana Token22 Helper" className="w-100px " />
-        </a>
+        </Link>
     <hr className="w-90 w-max-700px opaci-10 my-8 " />
-    <a href="/metadata.json" target="_blank" className="flex-col nodeco tx-white">
+    <Link href="/metadata.json" target="_blank" className="flex-col nodeco tx-white">
     <div className="tx-mdl opaci-75 tx-ls-3 mb-1" >Example JSON</div>
     <div className="tx-sm underline opaci-50 tx-ls-1  mb-4" >solana22.vercel.app/metadata.json</div>
          <div className="tx-xl">🧾</div>
-    </a>
+    </Link>
     <hr className="w-90 w-max-700px opaci-10 my-8 " />
     <div>
         <div className="tx-mdl opaci-75 tx-ls-3 mb-2 tx-center" >Metaplex Metadata</div>
@@ -253,12 +254,12 @@ export default function Tutorial() {
 
 </div>
 <div className="flex-col mt-100">
-    <a href="https://github.com/webduno/Solana22" target="_blank" className="flex-col nodeco tx-white">
+    <Link href="https://github.com/webduno/Solana22" target="_blank" className="flex-col nodeco tx-white">
         <h1 className="tx-mdl  tx-ls-3 mb-1" >Github Repository</h1>
         <div className="tx-sm underline  tx-ls-1 mb-4" >github.com/webduno/Solana22</div>
         <img  
         src="/page/git.png" alt="Solana Token22 Helper" className="w-100px pa-1 bg-white block bord-r-100p" />
-    </a>
+    </Link>
 </div>
 </div>
 
