@@ -1,0 +1,6 @@
+{
+    "name": "VVM Coin",
+    "symbol": "VVM",
+    "description": "VVM is a token program on the Solana blockchain, defining a common implementation for fungible tokens",
+    "image": "https://solana22.vercel.app/image.png"
+}

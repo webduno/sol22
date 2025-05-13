@@ -1,0 +1,6 @@
+{
+    "name": "SZZ Coin",
+    "symbol": "SZZ",
+    "description": "SZZ is a token program on the Solana blockchain, defining a common implementation for fungible tokens",
+    "image": "https://solana22.vercel.app/image.png"
+}

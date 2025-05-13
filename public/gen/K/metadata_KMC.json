@@ -1,0 +1,6 @@
+{
+    "name": "KMC Coin",
+    "symbol": "KMC",
+    "description": "KMC is a token program on the Solana blockchain, defining a common implementation for fungible tokens",
+    "image": "https://solana22.vercel.app/image.png"
+}

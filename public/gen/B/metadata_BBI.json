@@ -1,0 +1,6 @@
+{
+    "name": "BBI Coin",
+    "symbol": "BBI",
+    "description": "BBI is a token program on the Solana blockchain, defining a common implementation for fungible tokens",
+    "image": "https://solana22.vercel.app/image.png"
+}

@@ -1,0 +1,6 @@
+{
+    "name": "CPA Coin",
+    "symbol": "CPA",
+    "description": "CPA is a token program on the Solana blockchain, defining a common implementation for fungible tokens",
+    "image": "https://solana22.vercel.app/image.png"
+}
