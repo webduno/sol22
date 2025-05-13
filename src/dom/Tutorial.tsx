@@ -163,8 +163,8 @@ export default function Tutorial() {
 
 
     <hr className="my-8 invisible " />
-    <div className="bord-r-25 flex-col py-100 bg-b-50 mt-8" id="commandsList">
-    <div className="flex-col gap-4 flex-align-stretch">
+    <div className="w-95 w-max-700px bord-r-25 flex-col py-100 bg-b-50 mt-8" id="commandsList">
+    <div className=" flex-col gap-4 flex-align-stretch">
         <div className="tx-mdl opaci-75 tx-ls-3 mb-2 tx-center" >Command List</div>
         <div className="Q_xs py-2"></div>
         <div className="flex-row Q_xs_flex-col gap-1" >
@@ -215,7 +215,7 @@ export default function Tutorial() {
 <hr className="Q_md_x mt-100 invisible " />
 <hr className="my-8 invisible " />
 
-    <div className="bord-r-25 flex-col py-100 bg-w-10 w-90 mt-8     bg-glass-10" id="ddddd"
+    <div className="bord-r-25 flex-col py-100 bg-w-10 w-95 mt-8   w-max-700px bg-glass-10" id="ddddd"
     // style={{marginLeft: "5%"}}
     >
         <Link href="/image.png" target="_blank" className="flex-col nodeco tx-white">
