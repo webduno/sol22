@@ -45,11 +45,11 @@ export default function Tutorial() {
 
 
     <hr className="w-90 w-max-700px opaci-10 mt-8" />
-    <p className=" tx-lg tx-center px-4 mb-0 tx-bold">Create a token on the Solana blockchain</p>
+    <p className=" tx-lg tx-center px-4 mb-0 tx-bold">Create a token on Solana with Liquidity</p>
     <div className="tx-gray flex-col">
         <p className="w-max-400px w-90 tx-center  pa-4 bord-r-25"
     style={{background: "linear-gradient(180deg, #00000000, #00000044,  #00000000)"}}
-    >Resources for the Solana Token22 Program &amp; the Metaplex Protocol that allow you to create and manage your tokens on the Solana blockchain.</p>
+    >Resources for the Solana Token22 Program &amp; the Metaplex Protocol that allow you to create and manage your tokens on the Solana blockchain and adding liquidity pools and providers to allow public trading.</p>
     </div>
     
     <div className="bord-r-25 flex-col py-8 bg-b-50 mt-8 border-white-50 bg-glass-10" id="exampleList">

@@ -1,6 +1,6 @@
-# How to make a token in the solana blockchain
+# Create a token on Solana with Liquidity
 
-Create your own crypto currency from scratch for web3 using solana cli & metaplex. This repository contains resources for the Solana Token22 Program & the Metaplex Protocol that allow you to create and manage your tokens on the Solana blockchain.
+Create your own crypto currency from scratch for web3 using solana cli & metaplex. This repository contains resources for the Solana Token22 Program & the Metaplex Protocol that allow you to create and manage your tokens on the Solana blockchain and adding liquidity pools and providers to allow public trading.
 
 ### Website Guide:
   - https://sol22.vercel.app
