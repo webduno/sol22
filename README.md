@@ -36,9 +36,11 @@ spl-token create-token  --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
 ```
 npm i
 ```
+
 <br/>
 Update .env file
-<br/><br/>
+<br/>
+
 4. Upload metadata and image using .env file data
 ```
 node token22.js
