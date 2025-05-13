@@ -11,7 +11,7 @@ first we will need to download
 and install a couple of things
 
 all these links will be here
-at solana22.vercel.app
+at sol22.vercel.app
 and in the description
 
 
@@ -57,7 +57,7 @@ and copy this value
 remember not to share this secret key since its like the 
 password of your wallet
 
-then lets open a new command terminal inside the solana22  folder you downloaded and extracted previously from the github link
+then lets open a new command terminal inside the sol22  folder you downloaded and extracted previously from the github link
 and run this first command
 node secretgen.js SECRET_KEY
 where you will replace what you copied from the private key here
@@ -110,7 +110,7 @@ look the name symbol, and description
 and the image url
 
 yuo can find an example at in the website at
-solana22 vercel app then /metadata.json
+sol22 vercel app then /metadata.json
 
 
 for this new token
@@ -130,13 +130,13 @@ then symbol
 
 and most importantly, the correct metadata uri
 in my case is this one
-solana22 vercel app
+sol22 vercel app
 gen/y/metadata_yes.json
 
 in this case
 the image is a generic coin image emoji that i set as default for all tokens
 again, located in  the same url 
-solana22 vercel app then /image.png
+sol22 vercel app then /image.png
 
 but you can upload your own metadatajson file, with a custom image  to any website you have, and use that instead
 

@@ -8,7 +8,7 @@ export default function Tutorial() {
     style={{background: "linear-gradient(0deg, #00000000, #00000077)"}}
     >
         <h1 className="tx-mdl  tx-ls-3 mb-1" >Solana Token22 Guide</h1>
-        <div className="tx-sm underline  tx-ls-3 tx-gray mb-4" >solana22.vercel.app</div>
+        <div className="tx-sm underline  tx-ls-3 tx-gray mb-4" >sol22.vercel.app</div>
         <div className="spin-60 flex tx-pink pos-abs z-100 tx-lx mt-8" style={{filter: "brightness(200%) saturate(250%)"}}>
                         
                 <div className="tx-lgtx-bold-8 spin-9 paci-50 px-2 tx-pink blur-2">. <i className="paci-10 tx-mm blur-5">.</i> 
@@ -46,8 +46,8 @@ export default function Tutorial() {
         <ul className="flex-wrap flex-align-start gap-8 w-80 ">
             <li>
                 <ul className="ma-0 pa-0">
-                  <li><Link className=" py-2 tx-ls-1 opaci-chov--50 nodeco block" href="https://github.com/webduno/solana22" 
-                  target="_blank">🗂️ github.com/webduno/Solana22</Link></li>
+                  <li><Link className=" py-2 tx-ls-1 opaci-chov--50 nodeco block" href="https://github.com/webduno/sol22" 
+                  target="_blank">🗂️ github.com/webduno/Sol22</Link></li>
                   <hr className="opaci-20" />
                   <li><Link className=" py-2 opaci-chov--50 nodeco block" href="https://phantom.com/" 
                   target="_blank">👾 phantom.com (wallet)</Link></li>
@@ -220,13 +220,13 @@ export default function Tutorial() {
     >
         <Link href="/image.png" target="_blank" className="flex-col nodeco tx-white">
         <div className="tx-mdl opaci-75 tx-ls-3 mb-1" >Example Image</div>
-        <div className="tx-sm underline opaci-50 tx-ls-1  mb-4" >solana22.vercel.app/image.png</div>
+        <div className="tx-sm underline opaci-50 tx-ls-1  mb-4" >sol22.vercel.app/image.png</div>
             <img src="/image.png" alt="Solana Token22 Helper" className="w-100px " />
         </Link>
     <hr className="w-90 w-max-700px opaci-10 my-8 " />
     <Link href="/metadata.json" target="_blank" className="flex-col nodeco tx-white">
     <div className="tx-mdl opaci-75 tx-ls-3 mb-1" >Example JSON</div>
-    <div className="tx-sm underline opaci-50 tx-ls-1  mb-4" >solana22.vercel.app/metadata.json</div>
+    <div className="tx-sm underline opaci-50 tx-ls-1  mb-4" >sol22.vercel.app/metadata.json</div>
          <div className="tx-xl">🧾</div>
     </Link>
     <hr className="w-90 w-max-700px opaci-10 my-8 " />
@@ -245,7 +245,7 @@ export default function Tutorial() {
     "name": "Newest Coin Token",
     "symbol": "NEWCOIN",
     "description": "This is a token program on the Solana blockchain, defining a common implementation for fungible tokens",
-    "image": "https://solana22.vercel.app/image.png"
+    "image": "https://sol22.vercel.app/image.png"
 }`}
             </code>
         </pre>        
@@ -254,9 +254,9 @@ export default function Tutorial() {
 
 </div>
 <div className="flex-col mt-100">
-    <Link href="https://github.com/webduno/Solana22" target="_blank" className="flex-col nodeco tx-white">
+    <Link href="https://github.com/webduno/Sol22" target="_blank" className="flex-col nodeco tx-white">
         <h1 className="tx-mdl  tx-ls-3 mb-1" >Github Repository</h1>
-        <div className="tx-sm underline  tx-ls-1 mb-4" >github.com/webduno/Solana22</div>
+        <div className="tx-sm underline  tx-ls-1 mb-4" >github.com/webduno/Sol22</div>
         <img  
         src="/page/git.png" alt="Solana Token22 Helper" className="w-100px pa-1 bg-white block bord-r-100p" />
     </Link>

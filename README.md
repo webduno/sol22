@@ -10,7 +10,7 @@ Create your own crypto currency from scratch for web3 using solana cli & metaple
   - https://phantom.com/
   - https://docs.solanalabs.com/cli/install
   - https://docs.anza.xyz/cli/install/
-  - https://github.com/webduno/solana22
+  - https://github.com/webduno/sol22
   - https://spl.solana.com/token-2022
   - https://fluxbeam.xyz/app/liquidity
 
