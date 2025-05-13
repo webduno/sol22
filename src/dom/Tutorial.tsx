@@ -1,6 +1,17 @@
+"use client"
 import Link from 'next/link';
 
 export default function Tutorial() {
+    const COMMANDLIST = [
+        "node secretgen.js SECRET_KEY",
+        "spl-token create-token  --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb keypair.json",
+        "npm i",
+        "node token22.js",
+        "spl-token create-account TOKEN_ADDRESS keypair.json",
+    ]
+    const copyToClipboard = (text: string) => {
+        navigator.clipboard.writeText(text);
+    }
     return (
         <div className="flex-col pt-8 w-90 tx-white pb-100 ">
             
@@ -170,19 +181,19 @@ export default function Tutorial() {
         <div className="flex-row Q_xs_flex-col gap-1" >
             <div className="px-2 tx-gray tx-bold Q_sm_x" >#1</div>
             <div className="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">node secretgen.js SECRET_KEY</div>
-            <div className="underline pointer px-2 tx-link" data-click="copyCommand1">Copy <span className="Q_xs">Command #1</span></div>
+            <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(COMMANDLIST[0])}>Copy <span className="Q_xs">Command #1</span></div>
         </div>
         <div className="Q_xs py-2"></div>
         <div className="flex-row Q_xs_flex-col gap-1" >
             <div className="px-2 tx-gray tx-bold Q_sm_x" >#2</div>
             <div className="flex-1 tx-xsm tx-center bg-black tx-white border-white-50 px-1 py-2 bord-r-15">spl-token create-token  --program-id <small className="tx-xs">TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb</small> <small className="tx-xs">keypair.json</small></div>
-            <div className="underline pointer px-2 tx-link" data-click="copyCommand2">Copy <span className="Q_xs">Command #2</span></div>
+            <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(COMMANDLIST[1])}>Copy <span className="Q_xs">Command #2</span></div>
         </div>
         <div className="Q_xs py-2"></div>
         <div className="flex-row Q_xs_flex-col gap-1" >
             <div className="px-2 tx-gray tx-bold Q_sm_x" >#3</div>
             <div className="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">npm i</div>
-            <div className="underline pointer px-2 tx-link" data-click="copyCommand3">Copy <span className="Q_xs">Command #3</span></div>
+            <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(COMMANDLIST[2])}>Copy <span className="Q_xs">Command #3</span></div>
         </div>
         <div className="flex-row gap-4">
             <hr className="flex-1 opaci-10 " />
@@ -193,19 +204,19 @@ export default function Tutorial() {
         <div className="flex-row Q_xs_flex-col gap-1" >
             <div className="px-2 tx-gray tx-bold Q_sm_x" >#4</div>
             <div className="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">node token22.js</div>
-            <div className="underline pointer px-2 tx-link" data-click="copyCommand4">Copy <span className="Q_xs">Command #4</span></div>
+            <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(COMMANDLIST[3])}>Copy <span className="Q_xs">Command #4</span></div>
         </div>
         <div className="Q_xs py-2"></div>
         <div className="flex-row Q_xs_flex-col gap-1" >
             <div className="px-2 tx-gray tx-bold Q_sm_x" >#5</div>
             <div className="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">spl-token create-account TOKEN_ADDRESS <small className="tx-xs">keypair.json</small></div>
-            <div className="underline pointer px-2 tx-link" data-click="copyCommand5">Copy <span className="Q_xs">Command #5</span></div>
+            <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(COMMANDLIST[4])}>Copy <span className="Q_xs">Command #5</span></div>
         </div>
         <div className="Q_xs py-2"></div>
         <div className="flex-row Q_xs_flex-col gap-1" >
             <div className="px-2 tx-gray tx-bold Q_sm_x" >#6</div>
             <div className="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">spl-token mint TOKEN_ADDRESS 10000 <small className="tx-xs">--fee-payer keypair.json</small></div>
-            <div className="underline pointer px-2 tx-link" data-click="copyCommand6">Copy <span className="Q_xs">Command #6</span></div>
+            <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(COMMANDLIST[5])}>Copy <span className="Q_xs">Command #6</span></div>
         </div>
     </div>
 </div>

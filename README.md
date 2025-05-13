@@ -19,26 +19,20 @@ Create your own crypto currency from scratch for web3 using solana cli & metaple
 ## Commands:
 
 ```
-solana-keygen new --no-bip39-passphrase
+node secretgen.js SECRET_KEY
 
-cat C:\Users\Equipo\.config\solana\
-
-spl-token create-token --enable-metadata --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
-
-spl-token create-token  --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb
+spl-token create-token  --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb keypair.json
 
 spl-token create-account TOKEN_ADDRESS
 
-spl-token initialize-metadata TOKEN_ADDRESS "FUN coin" FUN https://sol22.vercel.app/gen/F/metadata_FUN.json
+npm i
+
+node token22.js
 
 spl-token mint TOKEN_ADDRESS 10000  
-
-spl-token authorize TOKEN_ADDRESS  mint --disable
-
-spl-token authorize TOKEN_ADDRESS  freeze --disable
 ```
 
-## Metadata Structure:
+## Metadata Structure of https://sol22.vercel.app/metadata.json
 ```
 {
     "name": "Newest Coin Token",
