@@ -5,6 +5,7 @@ Create your own crypto currency from scratch for web3 using solana cli & metaple
 ### Main Page:
   - https://sol22.vercel.app
 
+<br/><br/>
 
 ## Important Links:
   - https://github.com/webduno/sol22
@@ -17,7 +18,7 @@ Create your own crypto currency from scratch for web3 using solana cli & metaple
   - https://docs.anza.xyz/cli/install/
   - https://spl.solana.com/token-2022
 
-
+<br/><br/>
 
 ## Commands:
 
@@ -34,6 +35,8 @@ node token22.js
 
 spl-token mint TOKEN_ADDRESS 10000  
 ```
+
+<br/><br/>
 
 ## Metadata Structure of https://sol22.vercel.app/metadata.json
 ```
