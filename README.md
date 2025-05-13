@@ -2,7 +2,7 @@
 
 Create your own crypto currency from scratch for web3 using solana cli & metaplex. This repository contains resources for the Solana Token22 Program & the Metaplex Protocol that allow you to create and manage your tokens on the Solana blockchain.
 
-### Guide in Web Version:
+### Website Guide:
   - https://sol22.vercel.app
 
 <br/><br/>
