@@ -9,9 +9,12 @@ export default function Tutorial() {
     const COMMANDLIST = [
         "npm i",
         "node secretgen.js PRIVATE_KEY",
-        "spl-token create-token  --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb keypair.json",
+        "solana config set -u m --keypair keypair.json",
+        "spl-token create-token --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+
         "node token22.js",
-        "spl-token create-account TOKEN_ADDRESS keypair.json",
+        "spl-token create-account TOKEN_ADDRESS",
+        "spl-token mint TOKEN_ADDRESS 10000",
     ]
     return (
         <div className="flex-col pt-8 w-90 tx-white pb-100 ">
