@@ -20,7 +20,7 @@ export default function Tutorial() {
     return (
         <div className="flex-col pt-8 w-90 tx-white pb-100 ">
             
-    <Link href="/" className="flex-col nodeco tx-white  py-4 bord-r-50 w-90 w-max-700px"
+    <Link href="/" className="flex-col nodeco tx-white  py-4 bord-r-50 w-90 w-max-700px bg-glass-2"
     style={{background: "linear-gradient(0deg, #00000000, #00000077)"}}
     >
         <h1 className="tx-mdl  tx-ls-3 mb-1" >Solana Token22 Guide</h1>
@@ -50,7 +50,7 @@ export default function Tutorial() {
 
     <hr className="w-90 w-max-700px opaci-10 mt-8" />
     <p className=" tx-lg tx-center px-4 mb-0 tx-bold">Create a token on Solana with Liquidity</p>
-    <div className="tx-gray flex-col">
+    <div className="tx-gray flex-col bg-glass-2">
         <p className="w-max-400px w-90 tx-center  pa-4 bord-r-25"
     style={{background: "linear-gradient(180deg, #00000000, #00000044,  #00000000)"}}
     >Resources for the Solana Token22 Program &amp; the Metaplex Protocol that allow you to create and manage your tokens on the Solana blockchain and adding liquidity pools and providers to allow public trading.</p>
