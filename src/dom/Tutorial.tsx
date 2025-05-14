@@ -12,6 +12,7 @@ export default function Tutorial() {
         "solana config set -u m --keypair keypair.json",
         "spl-token create-token --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
 
+        "node token00.js",
         "node token22.js",
         "spl-token create-account TOKEN_ADDRESS",
         "spl-token mint TOKEN_ADDRESS 10000",
