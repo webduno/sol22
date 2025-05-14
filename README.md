@@ -276,13 +276,19 @@ if you have your own metadatajson file and image, but no website, and you would 
 just so you know, this last field is to connect to the solana blockhain mainnet, just leave it like that
 
 now we can run the fourth command
-node token22.js
+node token00.js
 press enter and wait
 
 
-once we see Success, it should have uploaded the metadata
+once we see Success, it should have created the metadata
 
-so lets go to the fith command, that setups the
+now we can run the fith command which is pretty much the same, but like this
+node token22.js
+press enter and wait
+again
+once we see Success, it should have updated everything on the blockchain
+
+so lets go to the sixth command, that setups the
 token accounts protocol, for sending and receiving the coin
 spl-token create-account then your TOKEN_ADDRESS 
 the same from before
@@ -296,4 +302,22 @@ same as before, replace the TOKEN_ADRESS text with your token code
 and the last value is the amount of coins that you will receive in your wallet
 
 in this case ill put 20000, and press enter
+and tada, you now have sent yourself some freshly created of your 
+new coin or token
+
+anyone in the solana blockchain  can now send receive and hold your coin
+
+finally, lets enable trading using a 
+popular website called fluxbeam xyz
+just go to this url on the liquidity section
+
+and add some of your tokens, plus a bit of solana
+this is the calculation for you to get the initial selling price
+after that you wont have control of the tokens price
+in this liquidity pool, but you can always create new ones
+
+click continue, wait a moment, and you are done
+this is your public trading link, where users can come
+to buy your tokens which will make the price go up
+
 
