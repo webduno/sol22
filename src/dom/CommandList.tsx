@@ -22,7 +22,7 @@ export default function CommandList({ commands }: CommandListProps) {
                 <div className="Q_xs py-2"></div>
                 <div className="flex-row Q_xs_flex-col gap-1" >
                     <div className="px-2 tx-gray tx-bold Q_sm_x" >#1</div>
-                    <div className="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">node secretgen.js SECRET_KEY</div>
+                    <div className="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">node secretgen.js PRIVATE_KEY</div>
                     <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(commands[1])}>Copy <span className="Q_xs">Command #2</span></div>
                 </div>
                 <div className="Q_xs py-2"></div>

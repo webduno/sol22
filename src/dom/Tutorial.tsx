@@ -8,7 +8,7 @@ import ExampleData from './ExampleData';
 export default function Tutorial() {
     const COMMANDLIST = [
         "npm i",
-        "node secretgen.js SECRET_KEY",
+        "node secretgen.js PRIVATE_KEY",
         "spl-token create-token  --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb keypair.json",
         "node token22.js",
         "spl-token create-account TOKEN_ADDRESS keypair.json",

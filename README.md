@@ -24,7 +24,7 @@ Create your own crypto currency from scratch for web3 using solana cli & metaple
 
 1. Create keypair.json file from phantom exported private key
 ```
-node secretgen.js SECRET_KEY
+node secretgen.js PRIVATE_KEY
 ```
 
 2. Create token program using the generated file as payer
@@ -160,8 +160,25 @@ and extract it when its done
 
 now that all that is ready, we can go to the commands list
 and start with the first one
-we will need a keypair.json file from the private key of
+npm i, copy it
+
+then lets open a new command terminal inside the sol22  folder you downloaded and extracted previously from the github link
+like this, right click, open terminal
+then paste the command, press enter and wait
+once you see "found 0 vulnerabilities" its done
+
+
+continuing with the seccond command, lets clear the terminal with clear and enter
+node secretgen.js PRIVATE_KEY
+
+
+this will generate a file called keypair.json file using the private key of
 your phantom wallet
+
+first copy and paste the command in the terminal
+
+but you have to edit it before pressing enter, you need to add your actual private key
+
 so go to your phantom wallet, profile, settings
 account management, select the one you want,
 then click show private key
@@ -170,21 +187,25 @@ and copy this value
 remember not to share this secret key since its like the 
 password of your wallet
 
-then lets open a new command terminal inside the sol22  folder you downloaded and extracted previously from the github link
-and run this first command
-node secretgen.js SECRET_KEY
-where you will replace what you copied from the private key here
-so, lets delete this, and we'll have this command
-node secretgen.js and a bunch of letters and numbers
-then you can hit enter and when you can see the message
-"Successfully created keypair.json"
-this will have generated a keypair.json file in the same folder, which will be used for transactions needed to make everything happen to create the token
 
-remember needs some solana balance 
-to make run the next commands, so send some SOL to this new account
+now, going back to the terminal
+
+you will replace what you copied from the private key here
+so, lets delete this, remember to leave the space in between, right click to paste
+ and now we'll have this command
+node secretgen.js and a bunch of letters and numbers
+
+now run the second command so you can now hit enter
+ and when you can see the message
+"Successfully created keypair.json"
+this will have generated the file in the same folder, which will be used for
+the next commands and transactions which will actually create the token
+
+remember you need some solana balance 
+to make run the next commands, so send some SOL to that public adress 
 im going to send 5 dollars which should cover for all steps
 
-now, copy the second command to create the actual token
+now, copy the third command to create the actual token
 spl-token token create, program id, then this code, which
 represents how solana makes their tokens
 if you google it, it should return token22 results 
@@ -199,9 +220,6 @@ this is the most important code for the token
 so, make sure to save it 
 
 
-continuing with the third command, lets clear the terminal
-and this one is just npm i, copy, paste it, enter and wait
-once you see "found 0 vulnerabilities" its done
 
 and before the fourth command, we have to update a file first
 which is the env file, find the .envExample file, and rename it to just .env
