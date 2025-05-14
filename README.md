@@ -22,36 +22,46 @@ Create your own crypto currency from scratch for web3 using solana cli & metaple
 
 ## Commands:
 
-1. Create keypair.json file from phantom exported private key
+1. Install the sol22 toolset
+```
+npm i
+```
+
+2. Create keypair.json file from phantom exported private key
 ```
 node secretgen.js PRIVATE_KEY
 ```
 
-2. Create token program using the generated file as payer
+3. Create keypair.json file from phantom exported private key
 ```
-spl-token create-token  --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb keypair.json
+solana config set -u m --keypair keypair.json
 ```
 
-3. Install the sol22 toolset
+4. Create token program using the generated file as payer
 ```
-npm i
+spl-token create-token  --program-id TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb keypair.json
 ```
 
 <br/>
 Update .env file
 <br/><br/><br/>
 
-4. Upload metadata and image using .env file data
+5. Upload metadata and image using .env file data
+```
+node token00.js
+```
+
+6. Upload metadata and image using .env file data
 ```
 node token22.js
 ```
 
-5. Create token functionalities for sending and receiving
+7. Create token functionalities for sending and receiving
 ```
 spl-token create-account TOKEN_ADDRESS keypair.json
 ```
 
-6. Receive tokens in phantom wallet
+8. Receive tokens in phantom wallet
 ```
 spl-token mint TOKEN_ADDRESS 10000 --fee-payer keypair.json
 ```

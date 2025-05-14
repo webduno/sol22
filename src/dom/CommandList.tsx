@@ -10,7 +10,7 @@ export default function CommandList({ commands }: CommandListProps) {
     }
 
     return (
-        <div className="w-95 w-max-700px bord-r-25 flex-col py-100 bg-b-50 mt-8" id="commandsList">
+        <div className="w-95 w-max-700px bord-r-25 flex-col pb-100 pt-8 bg-b-50 mt-8" id="commandsList">
             <div className=" flex-col gap-4 flex-align-stretch">
                 <div className="tx-mdl opaci-75 tx-ls-3 mb-2 tx-center" >Command List</div>
                 <div className="Q_xs py-2"></div>
