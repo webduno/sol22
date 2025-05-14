@@ -15,20 +15,20 @@ export default function CommandList({ commands }: CommandListProps) {
                 <div className="tx-mdl opaci-75 tx-ls-3 mb-2 tx-center" >Command List</div>
                 <div className="Q_xs py-2"></div>
                 <div className="flex-row Q_xs_flex-col gap-1" >
+                    <div className="px-2 tx-gray tx-bold Q_sm_x" >#3</div>
+                    <div className="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">npm i</div>
+                    <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(commands[0])}>Copy <span className="Q_xs">Command #1</span></div>
+                </div>
+                <div className="Q_xs py-2"></div>
+                <div className="flex-row Q_xs_flex-col gap-1" >
                     <div className="px-2 tx-gray tx-bold Q_sm_x" >#1</div>
                     <div className="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">node secretgen.js SECRET_KEY</div>
-                    <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(commands[0])}>Copy <span className="Q_xs">Command #1</span></div>
+                    <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(commands[1])}>Copy <span className="Q_xs">Command #2</span></div>
                 </div>
                 <div className="Q_xs py-2"></div>
                 <div className="flex-row Q_xs_flex-col gap-1" >
                     <div className="px-2 tx-gray tx-bold Q_sm_x" >#2</div>
                     <div className="flex-1 tx-xsm tx-center bg-black tx-white border-white-50 px-1 py-2 bord-r-15">spl-token create-token  --program-id <small className="tx-xs">TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb</small> <small className="tx-xs">keypair.json</small></div>
-                    <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(commands[1])}>Copy <span className="Q_xs">Command #2</span></div>
-                </div>
-                <div className="Q_xs py-2"></div>
-                <div className="flex-row Q_xs_flex-col gap-1" >
-                    <div className="px-2 tx-gray tx-bold Q_sm_x" >#3</div>
-                    <div className="flex-1 tx-xsm bg-black tx-white border-white-50 px-4 py-2 bord-r-15">npm i</div>
                     <div className="underline pointer px-2 tx-link" onClick={() => copyToClipboard(commands[2])}>Copy <span className="Q_xs">Command #3</span></div>
                 </div>
                 <div className="flex-row gap-4">
