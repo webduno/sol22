@@ -135,9 +135,9 @@ and install a couple of things
 
 this important link list will be here
 at sol22.vercel.app
-and in the description
+and also in the description
 
-
+##  step 1 requirements
 you have to install things like the phantom wallet,
 that you can download from this link here - phatom.com
 just click here, install the extension, and create your account, then you should have something like this
@@ -146,48 +146,58 @@ click the download button and install it
 and finally open the solana cli link,
 and for this, depending on your os
 for example on windows, just run these 2 commands
-this basically download the installer and then runs it
-lets follow the steps
-we have to open a command prompt console terminal as admin
-open windows, search cmd, and click here
+this one basically downloads an executable file and this one is to run that installer 
+so lets follow the steps
+first we have to open a command prompt console terminal as admin
+so ill open the windows menu, search cmd, and click here
+execute as admin
 
-the copy the first command, go the console again, paste it, and hit enter, wait a moment... perfect
+then copy the first command, go the console again, paste it, and hit enter, wait a moment... perfect
 now this other command to run the installer
-we do the same, and done
+we do the same, copy, paste, and done
 lastly when it says press enter to continue, do that
 and finally you can test that all worked succesfully
 by doing this last command
-solana --version
-lets clear the terminal first, type solana --version...
-and as you can see, it shows a valid version 
-lets close this terminal
+which is this one, so type solana --version... and enter.
+and as you can see, it shows a valid number 
+lets close this terminal for now
 
-and for the last requirement, you'll need to download this scripts repository that i wrote, that will call the blockchain to update the name and image of the token you will be creating
-so it can be shown in the wallets and blockchain explorers
+and for the last requirement,
+you'll need to download this github repository
+that i wrote, that will call the
+blockchain to update the name and image of the token you
+will be creating
+this is what it will provide the data to be shown in the wallets and blockchain explorers like this
 so, go to the first github link
 and click this green button, then download zip over here
 and extract it when its done
 
 now that all that is ready, we can go to the commands list
-and start with the first one
-npm i, copy it
+
+## step 2 commands
+
+at the commands list, 
+lets start with the first one
+npm i, 
+
+copy it
 
 then lets open a new command terminal inside the sol22  folder you downloaded and extracted previously from the github link
-like this, right click, open terminal
+like this, open folder, right click, open terminal
 then paste the command, press enter and wait
 once you see "found 0 vulnerabilities" its done
 
 
-continuing with the seccond command, lets clear the terminal with clear and enter
+continuing with the seccond command,
+lets clear the terminal first with clear and enter
+
+and check the second comand,
 node secretgen.js PRIVATE_KEY
-
-
-this will generate a file called keypair.json file using the private key of
-your phantom wallet
+what this will do, is generate a file called keypair.json based on the private key of your phantom wallet
 
 first copy and paste the command in the terminal
-
-but you have to edit it before pressing enter, you need to add your actual private key
+but you have to edit it before pressing enter,
+you need to add your actual private key
 
 so go to your phantom wallet, profile, settings
 account management, select the one you want,
@@ -215,24 +225,36 @@ remember you need some solana balance
 to make run the next commands, so send some SOL to that public adress 
 im going to send 5 dollars which should cover for all steps
 
-now, copy the third command to create the actual token
+the third command setups the solana cli configuration, to use that newly generated file
+so copy it
+solana config set "dash u m" to deploy to mainnet
+and this that tells it the name of the file of the account
+which you know is keypair.json
+and hit enter
+
+
+
+## step 3 token
+
+now, the intial config is done
+lets clear the terminal and continue
+copy the fourth command to create the actual token
 spl-token token create, program id, then this code, which
 represents how solana makes their tokens
-if you google it, it should return token22 results 
+if you google it, it should return abunch of oficial solana token22 results 
 as you can see
-and finally keypair.json, which as you know now is the file of the password of your wallet
 
-open the  terminal  again, we can clear this,
+open the  terminal  
 paste the command and press enter
 wait a few seconds
 and now you should see here, your new token adress
 this is the most important code for the token
 so, make sure to save it 
 
-
-
-and before the fourth command, we have to update a file first
-which is the env file, find the .envExample file, and rename it to just .env
+its crucial you save this new token adrress to continue with 
+the next commands
+and also before the fourth command, we have to update a file inside the sol22 folder first
+which is the environment file, find the file called .envExample, and rename it to just .env
 
 then open it with a notepad or something
 and this is where you will first, paste your new token address
@@ -298,6 +320,9 @@ press enter and wait
 again
 once we see Success, it should have updated everything on the blockchain
 
+
+## step 4 cryptocurrency
+
 so lets go to the sixth command, that setups the
 token accounts protocol, for sending and receiving the coin
 spl-token create-account then your TOKEN_ADDRESS 
@@ -330,4 +355,6 @@ click continue, wait a moment, and you are done
 this is your public trading link, where users can come
 to buy your tokens which will make the price go up
 
+
+## step 5 recap
 
