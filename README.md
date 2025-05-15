@@ -133,7 +133,7 @@ with liquidity pools for trading
 first we will need to download
 and install a couple of things
 
-this important link list will be here
+this link list will be here
 at sol22.vercel.app
 and also in the description
 
@@ -141,34 +141,39 @@ and also in the description
 so for step 1
 you have to install things like the phantom wallet,
 that you can download from this link here - phatom.com
-just click here, install the extension, and create your account, then you should have something like this
+just click here, install the extension, and create your account, 
+then you should have something like this
 also install nodejs from this link, nodejs.org
 click the download button and install it
 and finally open the solana cli link,
-and for this, depending on your os
+and for this one, depending on your os
 for example on windows, just run these 2 commands
-this one basically downloads an executable file and this one is to run that installer 
+this one basically downloads an executable file
+ and this one is to run that installer 
 so lets follow the steps
-first we have to open a command prompt console terminal as admin
+first we have to open a command prompt console terminal as administrator
 so ill open the windows menu, search cmd, and click here
 execute as admin
 
-then copy the first command, go the console again, paste it, and hit enter, wait a moment... perfect
+then copy the first command, go the console again, paste it, and hit enter,
+ wait a moment... perfect
+ 
 now this other command to run the installer
 we do the same, copy, paste, and done
-lastly when it says press enter to continue, do that
+when it says press enter to continue, do that
 and finally you can test that all of this worked succesfully
 by doing this last command
-which is this one, so type solana --version... and enter.
+so type solana --version... and enter.
 and as you can see, it shows a valid number 
-lets close this terminal since we have the cli
+lets close this terminal since we have the cli now
 
 and for the last requirement,
 you'll need to download this github repository
-that i wrote, that will call the
+that i wrote, these scripts will call the
 blockchain to update the name and image of the token you will be creating
-this is what it will provide the data to be shown in the wallets and blockchain explorers like this
-so, go to the first github link
+this software will provide the data to be shown in the wallets 
+and blockchain explorers like this
+so, go to the github webduno sol22 link
 and click this green button, then download zip over here
 and extract it when its done
 
@@ -182,7 +187,8 @@ npm i,
 
 copy it
 
-then lets open a new command terminal inside the "sol22 dash main"   folder you downloaded and extracted previously from the github link
+then lets open a new command terminal inside the "sol22 dash main"   
+folder you downloaded and extracted previously from the github link
 like this, open folder, right click, open terminal
 then paste the command, press enter and wait
 
@@ -192,7 +198,8 @@ but lets clear the terminal first with clear and enter
 
 and lets check the second comand,
 node secretgen.js PRIVATE_KEY
-what this will do, is generate a file called keypair.json based on the private key of your phantom wallet
+what this will do, is generate a file called keypair.json
+ based on the private key of your phantom wallet
 
 first copy and paste the command in the terminal
 but you have to edit it before pressing enter,
@@ -203,27 +210,32 @@ account management, select the one you want,
 then click show private key
 put your password, select solana, and continue
 and copy this value
-remember not to share this private key since its like the password of your wallet
+remember not to share this private key 
+since its like the password of your wallet
 
 
 now, going back to the terminal
 
 you will replace what you copied from the private key here
-so, lets delete this, remember to leave the space in between, right click or shift insert to paste
+so, lets delete this, remember to leave the space in between,
+ right click or shift insert to paste
  and now we'll have this command
 node secretgen.js and a bunch of letters and numbers
 
 now run the second command so you can now hit enter
  and when you can see the message
 "Successfully created keypair.json"
-this will have generated the file in the same folder, which will be used for
+this will have generated the file in the same folder,
+ which will be used for
 the next commands and transactions which will actually create the token
 
 remember you need some solana balance 
-to  run the next commands, so send some SOL to the public adress of that wallet you selected
+to  run the next commands, so send some SOL to the public adress 
+of that wallet you selected
 im going to send 5 dollars which should cover for all steps
 great, lets keep going
-the third command setups the solana cli configuration, to use that newly generated file
+the third command setups the solana cli configuration,
+ to use that newly generated file
 so copy the command number three
 solana config set "dash u space m" which means to deploy to mainnet
 and this that tells it the name of the file for your accounts private key
@@ -252,14 +264,17 @@ so, make sure to save it
 
 its crucial that you save this new token adrress to continue with 
 the next commands
-and also before the fith command, we have to update a file inside the sol22 folder first
-which is the environment file, find the file called .envExample, and rename it to just .env
+and also before the fith command, we have to update a file
+ inside the sol22 folder first
+which is the environment file, find the file called .envExample, 
+and rename it to just .env
 
 
 
 
 then open it with a notepad or something
-and this is where you have to paste your new token address that you saved before
+and this is where you have to paste your new token address
+ that you saved before
 so it know thats which token to update
 
 now, see this metadata uri field, and open this link
@@ -267,9 +282,11 @@ you can change this to update the name of the token
 and this symbol for the abbreviation of the name
 
 if you open the phantom wallet you can see that for example 
-this main token name is Solana which is the name, but the symbol is just SOL "s o l"
+this main token name is Solana which is the name, 
+but the symbol is just SOL "s o l"
 
-this json syncronizes the name and symbol, along with a  description, but also one of the most important properties of any coin
+this json syncronizes the name and symbol, along with a  description, 
+but also one of the most important properties of any coin
 the token image
 this is where we'll set the sources
 
@@ -285,7 +302,8 @@ and the image url
 going back to the environment file
 and continuing with the tutorial for the new token
 lets select a metadata.json file,
-well use one of the examples that i have generated here at the website, you can also use any of these
+well use one of the examples that i have generated here at the website,
+ you can also use any of these
 for example lets take YES, this will create
 a new token called "yes coin"
 if you click this option and open it
@@ -299,13 +317,17 @@ sol22 vercel app
 gen/y/metadata_yes.json
 
 and for this scenario
-the image is a generic coin image emoji that i set as default for all tokens for now
+the image is a generic coin image emoji that i set as default
+ for all tokens for now
 again, located in  the same base url 
 sol22 vercel app then /image.png
 
-but you can upload your own metadatajson file, with a custom image  to any website you have, and use that instead
+but you can upload your own metadatajson file, 
+with a custom image  to any website you have, and use that instead
 
-if you have your own metadatajson file and image, but no website, and you would like me to add your custom token metadata to my main website guide, contact me via github or in the comments
+if you have your own metadatajson file and image, but no website, 
+and you would like me to add your custom token metadata to my main website guide,
+ contact me via github or in the comments
 
 at last, we are done with the environment file
 now we can run the fourth command
