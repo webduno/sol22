@@ -7,7 +7,7 @@ const { createSignerFromKeypair, signerIdentity } = require("@metaplex-foundatio
 const web3 = require('@solana/web3.js');
 
 async function updateTokenMetadata() {
-    const myKeypair = loadWalletKey(process.env.KEYPAIR_FILE || '');
+    const myKeypair = loadWalletKey(process.env.KEYPAIR_FILE || 'keypair.json');
     const mint = new web3.PublicKey(process.env.TOKEN_ADDRESS || '');
     console.log("Target token address:", process.env.TOKEN_ADDRESS);
     const umi = createUmi(process.env.UMI_RPC_ENDPOINT || 'https://api.mainnet-beta.solana.com');
