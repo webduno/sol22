@@ -6,12 +6,22 @@ const { Keypair } = require("@solana/web3.js");
 const fs = require("fs");
 
 const SPL_TOKEN_2022_PROGRAM_ID = publicKey("TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb");
-const umiRpcEndpoint = process.env.UMI_RPC_ENDPOINT || ''; // https://api.mainnet-beta.solana.com
-const ourMetadata = {
-  "name": process.env.METADATA_NAME || 'Test Coin Name',
-  "symbol": process.env.METADATA_SYMBOL || 'BTC',
-  "uri": process.env.METADATA_URI || 'https://mileisol.com/token22/milei_metadata.json',
-};
+const umiRpcEndpoint = process.env.UMI_RPC_ENDPOINT || 'https://api.mainnet-beta.solana.com'; // https://api.mainnet-beta.solana.com
+// const ourMetadata = {
+//   "name": process.env.METADATA_NAME || 'Test Coin Name',
+//   "symbol": process.env.METADATA_SYMBOL || 'BTC',
+//   "uri": process.env.METADATA_URI || 'https://mileisol.com/token22/milei_metadata.json',
+// };
+
+const ourMetadata = async () => {
+  const jsonsrc = process.env.METADATA_URI || 'https://sol22.vercel.app/metadata.json';
+  const metadata = await fetch(jsonsrc);
+  const jsonResult = await metadata.json();
+  return {
+    ...jsonResult,
+    uri: jsonsrc,
+  };
+}
 
 function loadWalletKey(keypairFile) {
   return Keypair.fromSecretKey(

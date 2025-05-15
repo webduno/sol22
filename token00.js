@@ -11,12 +11,19 @@ async function initializeToken() {
     const myKeypair = loadWalletKey(process.env.KEYPAIR_FILE || '');
     const mint = new web3.PublicKey(process.env.TOKEN_ADDRESS || '');
     console.log("Target token address:", process.env.TOKEN_ADDRESS);
-    const umi = createUmi(process.env.UMI_RPC_ENDPOINT || '');
+    const umi = createUmi(process.env.UMI_RPC_ENDPOINT || 'https://api.mainnet-beta.solana.com');
   
     const signer = createSignerFromKeypair(umi, fromWeb3JsKeypair(myKeypair));
     umi.use(signerIdentity(signer, true));
     
-    const onChainData = {...ourMetadata,
+    const fetchedMetadata = await ourMetadata();
+    const customMetadata = {
+        name: fetchedMetadata.name,
+        symbol: fetchedMetadata.symbol,
+        uri: fetchedMetadata.uri,
+    }
+    
+    const onChainData = {...customMetadata,
       sellerFeeBasisPoints: percentAmount(0,2),creators: none(),
       collection: none(),uses: none(),
     }
