@@ -41,7 +41,7 @@ async function initializeToken() {
     try {
         console.log(signer.publicKey+" is creating metadata account... ");
         const txid = await createV1(umi, {...accounts, ...data}).sendAndConfirm(umi);
-        console.log("Success: https://solscan.io/tx/"+txid);
+        console.log("Success on metaplex createV1");
         return txid;
     } catch (error) {
         throw error;

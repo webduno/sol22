@@ -3,7 +3,7 @@ const { TokenStandard, updateMetadataAccountV2, findMetadataPda } = require("@me
 const { fromWeb3JsPublicKey, fromWeb3JsKeypair} = require('@metaplex-foundation/umi-web3js-adapters');
 const { loadWalletKey, ourMetadata } = require('./helpers.js');
 const { createUmi } = require('@metaplex-foundation/umi-bundle-defaults');
-const { createSignerFromKeypair, signerIdentity } = require("@metaplex-foundation/umi");
+const { createSignerFromKeypair, signerIdentity, none, percentAmount } = require("@metaplex-foundation/umi");
 const web3 = require('@solana/web3.js');
 
 async function updateTokenMetadata() {
@@ -31,9 +31,14 @@ async function updateTokenMetadata() {
     }
     const data = {
         ...customMetadata,
+        creators: null,
         isMutable: true,
         primarySaleHappened: true,
-        tokenStandard: TokenStandard.Fungible,
+        tokenStandard: TokenStandard.Fungible,        
+        sellerFeeBasisPoints: percentAmount(0,2),
+        creators: none(),
+        collection: none(),
+        uses: none(),
     }
 
     try {
@@ -42,12 +47,13 @@ async function updateTokenMetadata() {
         const finalPayload = {
             ...accounts,
             data,
+            creators: null,
             updateAuthority: signer.publicKey,
             isMutable: true,
         }
-        console.log("finalPayload", finalPayload);
+
         const txid = await updateMetadataAccountV2(umi, finalPayload).sendAndConfirm(umi);
-        console.log("Success: https://solscan.io/tx/"+txid);
+        console.log("Success on updateMetadataAccountV2");
         return txid;
     } catch (error) {
         if (error.name === 'SendTransactionError') {

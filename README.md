@@ -187,8 +187,8 @@ npm i,
 
 copy it
 
-then lets open a new command terminal inside the "sol22 dash main"   
-folder you downloaded and extracted previously from the github link
+then lets open a new command terminal inside the "sol22 main"   
+folder you downloaded and extracted earlier
 like this, open folder, right click, open terminal
 then paste the command, press enter and wait
 
@@ -227,28 +227,33 @@ now run the second command so you can now hit enter
 "Successfully created keypair.json"
 this will have generated the file in the same folder,
  which will be used for
-the next commands and transactions which will actually create the token
+the next commands and transactions which will eventually create the token
 
 remember you need some solana balance 
 to  run the next commands, so send some SOL to the public adress 
 of that wallet you selected
 im going to send 5 dollars which should cover for all steps
+
+
 great, lets keep going
-the third command setups the solana cli configuration,
- to use that newly generated file
+
+
+the third command setups the solana
+cli configuration to use that newly generated file
 so copy the command number three
 solana config set "dash u space m" which means to deploy to mainnet
-and this that tells it the name of the file for your accounts private key
-which you know is keypair.json
-so go to the terminal, paste it
+and this part at the end 
+specifies the name of the file for your accounts private key
+which you already know is keypair.json
+so go to the terminal, paste the command
 and hit enter
-and we see the commitment as confirmed
-so we are good
+and when we see the commitment as confirmed
+we are good
 
 ## step 3 token
 
 now, that the intial config is done
-lets clear the terminal again and continue
+lets continue
 copy the fourth command to create the actual token
 spl-token create token, program id, then this code, which
 represents how solana makes their tokens
@@ -272,31 +277,26 @@ and rename it to just .env
 
 
 
-then open it with a notepad or something
-and this is where you have to paste your new token address
- that you saved before
-so it know thats which token to update
+then open it with a notepad or something similar
+and this is where you have to paste your new token
+address that you saved before
 
-now, see this metadata uri field, and open this link
-you can change this to update the name of the token
-and this symbol for the abbreviation of the name
+so just replace this with your own token address
 
-if you open the phantom wallet you can see that for example 
-this main token name is Solana which is the name, 
-but the symbol is just SOL "s o l"
-
-this json syncronizes the name and symbol, along with a  description, 
-but also one of the most important properties of any coin
-the token image
-this is where we'll set the sources
-
-remember you can find an example 
-in the website guide at
+and also, lets take a look at this metadata uri field, so open this link
 sol22 vercel app /metadata.json
 
-the same structure for this json file
-look the name symbol, and description
-and the image url
+this is how you can update the name, symbol, and image of the token
+
+for example if you open the phantom wallet you can see that  
+this main token label is Solana which is the name, 
+but the symbol is just SOL "s o l"
+meaning its kind of the abbreviation of the name
+
+this json syncronizes the main identifiers , along with a  description, 
+but most importantly also the token image
+and many more properties the coin
+
 
 
 going back to the environment file
